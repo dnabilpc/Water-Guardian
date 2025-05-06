@@ -1,0 +1,1 @@
+Game Turn Based Strategy yang menceritakan tentang seorang dewi laut melawan makhluk jahat yang ingin mencemari lautan. Dibuat oleh tim Cave Dweller :)
