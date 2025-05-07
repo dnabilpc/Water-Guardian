@@ -57,6 +57,7 @@ public class Turret : MonoBehaviour
         {
             target = hits[0].transform;
         }
+
     }
 
     private bool checkedTargetInRange()
