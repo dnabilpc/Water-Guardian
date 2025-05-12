@@ -2,14 +2,13 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
 public class UIController : MonoBehaviour
 {
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public DialogManager dialogManager;
     public TextMeshProUGUI dialogText;
     public Image dialogImage;
     public Button nextButton;
-    public Button backButton;
     public float typingSpeed = 0.05f;
 
     void Start()
@@ -57,4 +56,5 @@ public class UIController : MonoBehaviour
         }
         UpdateButtonState();
     }
+    
 }
