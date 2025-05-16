@@ -7,6 +7,7 @@ public class UIController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public DialogManager dialogManager;
     public TextMeshProUGUI dialogText;
+    public TextMeshProUGUI nameText;
     public Image dialogImage;
     public Button nextButton;
     public float typingSpeed = 0.05f;
@@ -24,7 +25,10 @@ public class UIController : MonoBehaviour
         {
             StopAllCoroutines();
             StartCoroutine(TypeText(dialog.text));
+            // StartCoroutine(TypeText(dialog.name));
             dialogImage.sprite = dialog.image;
+            nameText.text = dialog.characterName;
+
         }
         else
         {
