@@ -66,5 +66,6 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj",
     },
-    "dotnet.defaultSolution": "Water-Guardian.sln"
+    "dotnet.defaultSolution": "Water-Guardian.sln",
+    "dotnet.preferCSharpExtension": true
 }
