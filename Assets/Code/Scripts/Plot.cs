@@ -29,15 +29,17 @@ public class Plot : MonoBehaviour
     private void OnMouseDown()
     {
         //Debug.Log("Mouse Clicked");
-        if (tower == null)
-        {
-            GameObject towerPrefab = BuildManager.main.GetSelectedTower();
+        if (tower != null) return;
+            Tower towerPrefab = BuildManager.main.GetSelectedTower();
             Vector3 spawnPosition = transform.position + new Vector3(-4.6f, 0.5f, 0f); // misalnya
-            tower = Instantiate(towerPrefab, spawnPosition, Quaternion.identity);
-        }
-        else
+            
+        if(towerPrefab.cost > LevelManager.main.currency)
         {
-            Debug.Log("Can't build there!");
+            Debug.Log("Not enough currency");
+            return;
         }
+        LevelManager.main.SpendCurrency(towerPrefab.cost);
+        tower = Instantiate(towerPrefab.prefab, spawnPosition, Quaternion.identity);
+        
     }
 }

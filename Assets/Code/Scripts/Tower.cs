@@ -1,16 +1,17 @@
 using UnityEngine;
+using System;
 
-public class Tower : MonoBehaviour
+[Serializable]
+public class Tower 
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public string name;
+    public int cost;
+    public GameObject prefab;
 
-    // Update is called once per frame
-    void Update()
+    public Tower (string _name, int _cost, GameObject _prefab)
     {
-        
+        name = _name;
+        cost = _cost;
+        prefab = _prefab;
     }
 }
