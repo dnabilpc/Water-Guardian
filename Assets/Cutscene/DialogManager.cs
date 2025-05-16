@@ -7,8 +7,8 @@ public class Dialog {
     public string text;
     public Sprite image;
 }
-
-public class DialogManager : MonoBehaviour {
+public class DialogManager : MonoBehaviour
+{
     public Dialog[] dialogs;
     private int currentIndex = 0;
 
@@ -27,6 +27,17 @@ public class DialogManager : MonoBehaviour {
         return false;
     }
     public bool CanMoveNext() {
-        return currentIndex < dialogs.Length -1;
+        return currentIndex < dialogs.Length - 1;
     }
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // void Start()
+    // {
+        
+    // }
+
+    // // Update is called once per frame
+    // void Update()
+    // {
+        
+    // }
 }
