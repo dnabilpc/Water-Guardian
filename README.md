@@ -22,6 +22,11 @@ Long ago, the oceans thrived under the protection of the Sea Goddess. But now, a
 ## About the Developers
 
 Developed with love by **Team Cave Dweller** — a passionate team dedicated to crafting meaningful experiences through storytelling, gameplay, and a touch of environmental awareness.
+Cave Dweller member:
+1. Muhammad
+2. Moch. Ricky Pratama
+3. Devit Erlingga Arafiudin
+4. Diandra Nabil Putra Cahyono
 
 ---
 
