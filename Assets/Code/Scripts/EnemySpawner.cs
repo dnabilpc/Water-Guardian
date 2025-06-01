@@ -14,6 +14,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float enemiesPersecond = 0.5f;
     [SerializeField] private float timeBetweenWaves = 5f;
     [SerializeField] private float difficultyScalingFactor = 0.75f;
+    [SerializeField] private int maxWaves = 10; // Tambahkan ini untuk mengatur jumlah maksimal wave
+    [SerializeField] private bool infiniteWaves = false; // Tambahkan ini untuk opsi wave tak terbatas
 
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
@@ -69,7 +71,21 @@ public class EnemySpawner : MonoBehaviour
         isSpawning = false;
         timeSinceLastSpawn = 0f;
         currentWave++;
+
+        if (!infiniteWaves && currentWave > maxWaves)
+        {
+            GameWon(); // Panggil method baru ketika semua wave selesai
+            return;
+        }
+
         StartCoroutine(StartWave());
+    }
+
+    private void GameWon()
+    {
+        Debug.Log("Congratulations! All waves completed!");
+        // Tambahkan logika ketika game selesai di sini
+        // Misalnya memunculkan UI victory screen, dll
     }
 
     private void SpawnEnemy()

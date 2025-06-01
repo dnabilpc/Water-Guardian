@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class UIController : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -33,6 +34,7 @@ public class UIController : MonoBehaviour
         else
         {
             Debug.Log("No found Dialog");
+            
         }
     }
 
@@ -49,16 +51,20 @@ public class UIController : MonoBehaviour
 
     private void UpdateButtonState()
     {
-        nextButton.interactable = dialogManager.CanMoveNext();
+        nextButton.interactable = true;
     }
 
     private void OnNextButtonClick()
     {
-        if (dialogManager.MoveNext())
+        if (dialogManager.CanMoveNext())
         {
+            dialogManager.MoveNext();
             ShowDialog(dialogManager.GetCurrentDialog());
         }
-        UpdateButtonState();
+        else
+        {
+            SceneManager.LoadScene("Map1Scene");
+        }
     }
     
 }

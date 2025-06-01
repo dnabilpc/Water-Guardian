@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Plot
+    uniqueID: 3215587103
+    locked: 0
   - name: Turets
     uniqueID: 2535512195
     locked: 0
