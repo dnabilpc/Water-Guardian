@@ -8,14 +8,28 @@ public class LevelManager : MonoBehaviour
     public Transform[] path;
 
     public int currency;
-    [SerializeField] private int maxLives = 3;  // Jumlah maksimal enemy yang boleh lolos
-    private int currentLives;  // Jumlah nyawa yang tersisa
+    [SerializeField] private int maxLives = 3;
+    private int currentLives;
+
+    [Header("UI References")]
+    public GameOverUI gameOverUI;
+    public GameWonUI gameWonUI; // Tambahkan reference untuk GameWonUI
+
+    // Tambahkan property untuk tracking enemies
+    public int EnemiesLeft
+    {
+        get
+        {
+            if (EnemySpawner.main != null)
+                return EnemySpawner.main.GetEnemiesLeft();
+            return 0;
+        }
+    }
 
     private void Awake()
     {
         main = this;
     }
-
 
     private void Start()
     {
@@ -54,8 +68,29 @@ public class LevelManager : MonoBehaviour
     private void GameOver()
     {
         Debug.Log("Game Over! Too many enemies reached the end!");
-        // Tambahkan logika game over di sini
-        // Misalnya memunculkan UI game over, menghentikan spawn enemy, dll
-        Time.timeScale = 0f;  // Menghentikan game
+
+        if (gameOverUI != null)
+        {
+            gameOverUI.ShowGameOverPanel();
+        }
+        else
+        {
+            Time.timeScale = 0f;
+        }
+    }
+
+    // Tambahkan method untuk Game Won
+    public void GameWon()
+    {
+        Debug.Log("Game Won! All waves completed!");
+
+        if (gameWonUI != null)
+        {
+            gameWonUI.ShowGameWonPanel();
+        }
+        else
+        {
+            Time.timeScale = 0f;
+        }
     }
 }
