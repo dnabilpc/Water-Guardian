@@ -10,6 +10,7 @@ public class EnemyMovement : MonoBehaviour
 
     private Transform target;
     private int pathIndex = 0;
+    private bool hasInvokedDestroy = false; // Flag untuk mencegah double invoke
 
     private void Start()
     {
@@ -42,6 +43,9 @@ public class EnemyMovement : MonoBehaviour
 
     private void ReachedEnd()
     {
+        if (hasInvokedDestroy) return; // Prevent double execution
+
+        hasInvokedDestroy = true;
         LevelManager.main.ReduceLives();
         EnemySpawner.onEnemyDestroy.Invoke();
         Destroy(gameObject);
@@ -49,6 +53,12 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnDestroy()
     {
-        EnemySpawner.onEnemyDestroy.Invoke();
+        // Only invoke if enemy was destroyed by other means (not reaching end)
+        // AND Health component hasn't already invoked it
+        if (!hasInvokedDestroy && !GetComponent<Health>().isDestroyed)
+        {
+            hasInvokedDestroy = true;
+            EnemySpawner.onEnemyDestroy.Invoke();
+        }
     }
 }
