@@ -41,12 +41,13 @@ public class UIController : MonoBehaviour
     private IEnumerator TypeText(string text)
     {
         dialogText.text = "";
-
+        AudioManager.Instance?.PlayVoiceOver();
         foreach (char letter in text.ToCharArray())
         {
             dialogText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+        AudioManager.Instance?.StopVoiceOver();
     }
 
     private void UpdateButtonState()
@@ -64,6 +65,7 @@ public class UIController : MonoBehaviour
         else
         {
             SceneManager.LoadScene("Map1Scene");
+            AudioManager.Instance?.PlayBGM(AudioManager.Instance.bgmGamePlay);
         }
     }
     
