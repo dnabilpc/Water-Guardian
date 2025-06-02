@@ -6,18 +6,17 @@ public class Health : MonoBehaviour
     [SerializeField] private int hitPoints = 2;
     [SerializeField] private int currencyWorth = 50;
 
-    private bool isDestroyed = false;
+    public bool isDestroyed = false; // Make it public untuk dicek EnemyMovement
 
     public void TakeDamage(int damage)
     {
         hitPoints -= damage;
 
         if (hitPoints <= 0 && !isDestroyed)
-
         {
+            isDestroyed = true;
             EnemySpawner.onEnemyDestroy.Invoke();
             LevelManager.main.IncreaseCurrency(currencyWorth);
-            isDestroyed = true;
             Destroy(gameObject);
         }
     }

@@ -6,6 +6,8 @@ using UnityEngine.InputSystem.iOS;
 
 public class EnemySpawner : MonoBehaviour
 {
+    public static EnemySpawner main;
+
     [Header("Refrences")]
     [SerializeField] private GameObject[] enemyPrefabs;
 
@@ -14,8 +16,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float enemiesPersecond = 0.5f;
     [SerializeField] private float timeBetweenWaves = 5f;
     [SerializeField] private float difficultyScalingFactor = 0.75f;
-    [SerializeField] private int maxWaves = 10; // Tambahkan ini untuk mengatur jumlah maksimal wave
-    [SerializeField] private bool infiniteWaves = false; // Tambahkan ini untuk opsi wave tak terbatas
+    [SerializeField] private int maxWaves = 1;
+    [SerializeField] private bool infiniteWaves = false;
 
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
@@ -25,16 +27,29 @@ public class EnemySpawner : MonoBehaviour
     private int enemiesAlive;
     private int enemiesLeftToSpawn;
     private bool isSpawning = false;
+    private bool allWavesCompleted = false; // Tambahkan flag untuk track completion
 
     private void Awake()
     {
+        main = this;
         onEnemyDestroy.AddListener(EnemyDestroyed);
+    }
+
+    public int GetEnemiesLeft()
+    {
+        return enemiesLeftToSpawn + enemiesAlive;
+    }
+
+    public int GetCurrentWave()
+    {
+        return currentWave;
     }
 
     private void Start()
     {
         StartCoroutine(StartWave());
     }
+
     private void Update()
     {
         if (!isSpawning) return;
@@ -48,8 +63,9 @@ public class EnemySpawner : MonoBehaviour
             timeSinceLastSpawn = 0f;
         }
 
-        if (enemiesAlive == 0 && enemiesLeftToSpawn == 0) 
+        if (enemiesAlive == 0 && enemiesLeftToSpawn == 0)
         {
+            Debug.Log("Panggil EndWave() untuk memulai wave berikutnya");
             EndWave();
         }
     }
@@ -57,6 +73,21 @@ public class EnemySpawner : MonoBehaviour
     private void EnemyDestroyed()
     {
         enemiesAlive--;
+        Debug.Log($"Enemy destroyed! Enemies alive: {enemiesAlive}, Left to spawn: {enemiesLeftToSpawn}, All waves completed: {allWavesCompleted}");
+
+        // Pastikan enemiesAlive tidak negatif
+        if (enemiesAlive < 0)
+        {
+            Debug.LogError("DOUBLE COUNTING DETECTED! Resetting enemiesAlive to 0");
+            enemiesAlive = 0;
+        }
+
+        // Check jika semua wave sudah selesai DAN semua enemy sudah mati
+        if (allWavesCompleted && enemiesAlive == 0 && enemiesLeftToSpawn == 0)
+        {
+            Debug.Log("Calling GameWon!");
+            GameWon();
+        }
     }
 
     private IEnumerator StartWave()
@@ -71,11 +102,19 @@ public class EnemySpawner : MonoBehaviour
         isSpawning = false;
         timeSinceLastSpawn = 0f;
         currentWave++;
-
+        Debug.Log($"maxWaves: {maxWaves}, currentWave: {currentWave}, infiniteWaves: {infiniteWaves}");
+        // Cek apakah ini wave terakhir
         if (!infiniteWaves && currentWave > maxWaves)
         {
-            GameWon(); // Panggil method baru ketika semua wave selesai
-            return;
+            allWavesCompleted = true; // Set flag bahwa semua wave sudah selesai
+            // JANGAN panggil GameWon() di sini, tunggu sampai semua enemy mati
+            Debug.Log("All waves spawned! Waiting for all enemies to be destroyed...");
+            // Check jika semua wave sudah selesai DAN semua enemy sudah mati
+            if (allWavesCompleted && enemiesAlive == 0 && enemiesLeftToSpawn == 0)
+            {
+                Debug.Log("Calling GameWon!");
+                GameWon();
+            }
         }
 
         StartCoroutine(StartWave());
@@ -83,9 +122,8 @@ public class EnemySpawner : MonoBehaviour
 
     private void GameWon()
     {
-        Debug.Log("Congratulations! All waves completed!");
-        // Tambahkan logika ketika game selesai di sini
-        // Misalnya memunculkan UI victory screen, dll
+        Debug.Log("Congratulations! All waves completed and all enemies destroyed!");
+        LevelManager.main.GameWon();
     }
 
     private void SpawnEnemy()
