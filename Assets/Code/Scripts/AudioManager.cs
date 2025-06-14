@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    [SerializeField] Slider musicVolumeSlider;
+    [SerializeField] Slider gameVolumeSlider;
     public static AudioManager Instance { get; private set; }
     [Header("-----Audio Sources-----")]
     [SerializeField] AudioSource musicSource;
