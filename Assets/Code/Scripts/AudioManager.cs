@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip bgmGamePlay;
     public AudioClip bgmCutscene;
     public AudioClip voiceOver;
+    public AudioClip hitSound;
 
 
     private void Start()
@@ -36,7 +37,8 @@ public class AudioManager : MonoBehaviour
         SFXSource.clip = voiceOver;
         SFXSource.Play();
     }
-    public void StopVoiceOver(){
+    public void StopVoiceOver()
+    {
         if (SFXSource.isPlaying && SFXSource.clip == voiceOver)
         {
             SFXSource.Stop();
@@ -53,6 +55,17 @@ public class AudioManager : MonoBehaviour
         {
             musicSource.clip = clip;
             musicSource.Play();
+        }
+    }
+    public void PlayHitSound()
+    {
+        if (hitSound != null)
+        {
+            PlaySFX(hitSound);
+        }
+        else
+        {
+            Debug.LogWarning("Hit sound clip is not assigned!");
         }
     }
 }
