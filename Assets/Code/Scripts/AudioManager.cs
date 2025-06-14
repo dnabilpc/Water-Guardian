@@ -1,7 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections.Generic;
+
 
 public class AudioManager : MonoBehaviour
 {
+    [SerializeField] Slider musicVolumeSlider;
+    [SerializeField] Slider gameVolumeSlider;
     public static AudioManager Instance { get; private set; }
     [Header("-----Audio Sources-----")]
     [SerializeField] AudioSource musicSource;
@@ -12,12 +17,25 @@ public class AudioManager : MonoBehaviour
     public AudioClip bgmGamePlay;
     public AudioClip bgmCutscene;
     public AudioClip voiceOver;
+    public AudioClip hitSound;
 
+    private bool isLoading = false;
 
     private void Start()
     {
+        if (!PlayerPrefs.HasKey("musicVolume") || !PlayerPrefs.HasKey("gameVolume"))
+        {
+            PlayerPrefs.SetFloat("musicVolume", 1f);
+            PlayerPrefs.SetFloat("gameVolume", 1f);
+        }
+        else
+        {
+            Load();
+        }
         musicSource.clip = bgmMainMenu;
         musicSource.Play();
+
+        StartCoroutine(LoadAfterFrame());
     }
     private void Awake()
     {
@@ -31,12 +49,18 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    private System.Collections.IEnumerator LoadAfterFrame()
+    {
+        yield return null;
+        Load();
+    }
     public void PlayVoiceOver()
     {
         SFXSource.clip = voiceOver;
         SFXSource.Play();
     }
-    public void StopVoiceOver(){
+    public void StopVoiceOver()
+    {
         if (SFXSource.isPlaying && SFXSource.clip == voiceOver)
         {
             SFXSource.Stop();
@@ -55,4 +79,52 @@ public class AudioManager : MonoBehaviour
             musicSource.Play();
         }
     }
+    public void PlayHitSound()
+    {
+        if (hitSound != null)
+        {
+            PlaySFX(hitSound);
+        }
+        else
+        {
+            Debug.LogWarning("Hit sound clip is not assigned!");
+        }
+    }
+
+    public void ChangeMusicVolume()
+    {
+        if (!isLoading)
+        {
+            musicSource.volume = musicVolumeSlider.value;
+            Save();
+        }
+    }
+    public void ChangeGameVolume()
+    {
+        if (!isLoading)
+        {
+            SFXSource.volume = gameVolumeSlider.value;
+            Save();
+        }
+    }
+
+    private void Load()
+    {
+        isLoading = true;
+
+        musicVolumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        gameVolumeSlider.value = PlayerPrefs.GetFloat("gameVolume");
+        musicSource.volume = PlayerPrefs.GetFloat("musicVolume");
+        SFXSource.volume = PlayerPrefs.GetFloat("gameVolume");
+
+        isLoading = false;
+    }
+
+    private void Save()
+    {
+        PlayerPrefs.SetFloat("musicVolume", musicVolumeSlider.value);
+        PlayerPrefs.SetFloat("gameVolume", gameVolumeSlider.value);
+    }
+
+
 }
