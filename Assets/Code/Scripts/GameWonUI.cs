@@ -11,6 +11,15 @@ public class GameWonUI : MonoBehaviour
     public Button mainMenuButton;
     public TextMeshProUGUI finalCurrencyText;
 
+    [Header("Custom Next Level Settings")]
+    public string nextLevelSceneName = "Level2"; // Custom scene name
+    public bool useSceneIndex = false;
+    public int nextLevelSceneIndex = 2;
+
+    [Header("Audio Settings")]
+    public bool playVictoryMusic = true;
+    public bool playSoundEffect = true;
+
     private void Start()
     {
         gameWonPanel.SetActive(false);
@@ -27,6 +36,8 @@ public class GameWonUI : MonoBehaviour
         gameWonPanel.SetActive(true);
         Time.timeScale = 0f;
 
+        // Play Game Won Audio
+        PlayGameWonAudio();
 
         if (finalCurrencyText != null)
         {
@@ -34,13 +45,42 @@ public class GameWonUI : MonoBehaviour
         }
     }
 
+    private void PlayGameWonAudio()
+    {
+        if (AudioManager.Instance != null)
+        {
+            // Play sound effect
+            if (playSoundEffect)
+            {
+                AudioManager.Instance.PlayGameWonAudio();
+            }
+
+        }
+        else
+        {
+            Debug.LogWarning("AudioManager instance not found!");
+        }
+    }
+
     private void NextLevel()
     {
         Time.timeScale = 1f;
-        // Load next level scene - sesuaikan dengan nama scene level berikutnya
-        SceneManager.LoadScene("Level2"); // Atau gunakan build index
-    }
 
+        // Stop victory music and return to gameplay BGM
+        if (AudioManager.Instance != null && playVictoryMusic)
+        {
+            AudioManager.Instance.PlayBGM(AudioManager.Instance.bgmGamePlay);
+        }
+
+        if (useSceneIndex)
+        {
+            SceneManager.LoadScene(nextLevelSceneIndex);
+        }
+        else
+        {
+            SceneManager.LoadScene(nextLevelSceneName);
+        }
+    }
     private void GoToMainMenu()
     {
         Time.timeScale = 1f;
