@@ -139,7 +139,7 @@ ScriptedImporter:
       y: 4
       width: 146
       height: 155
-    spriteID: 004c20435a8b9a84b842472318a11456
+    spriteID: 783d6f410e3d9204894348e44a703dfc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,7 +160,7 @@ ScriptedImporter:
       y: 4
       width: 130
       height: 155
-    spriteID: b84728de402b52f47ad04396da863588
+    spriteID: b0ee1a80112321c41ae1ace84e9677b2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -181,7 +181,7 @@ ScriptedImporter:
       y: 4
       width: 130
       height: 155
-    spriteID: ebff3dc3f4551eb45831a3797f840c9f
+    spriteID: 08b729c3f0a082c4099739139612ab8b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -202,7 +202,7 @@ ScriptedImporter:
       y: 167
       width: 130
       height: 155
-    spriteID: 5d6eedf04beef7340b4adf2ad8b2379b
+    spriteID: 9433a053db6cd3b4dad5502060f53b44
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -223,7 +223,7 @@ ScriptedImporter:
       y: 167
       width: 126
       height: 155
-    spriteID: 9f02316dd02960949a19ef02848dd193
+    spriteID: 07b4ce0d54b798b409a25132975afb14
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -241,7 +241,7 @@ ScriptedImporter:
       value1: 0
       value2: 0
       value3: 0
-    guid: -118756436
+    guid: 0
     name: Wood_Tower_Purple
     layerFlags: 0
     layerType: 0
@@ -255,7 +255,7 @@ ScriptedImporter:
         y: 21
         width: 146
         height: 155
-      spriteId: 004c20435a8b9a84b842472318a11456
+      spriteId: 783d6f410e3d9204894348e44a703dfc
     - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -264,7 +264,7 @@ ScriptedImporter:
         y: 21
         width: 130
         height: 155
-      spriteId: b84728de402b52f47ad04396da863588
+      spriteId: b0ee1a80112321c41ae1ace84e9677b2
     - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -273,7 +273,7 @@ ScriptedImporter:
         y: 21
         width: 130
         height: 155
-      spriteId: ebff3dc3f4551eb45831a3797f840c9f
+      spriteId: 08b729c3f0a082c4099739139612ab8b
     - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -282,7 +282,7 @@ ScriptedImporter:
         y: 21
         width: 130
         height: 155
-      spriteId: 5d6eedf04beef7340b4adf2ad8b2379b
+      spriteId: 9433a053db6cd3b4dad5502060f53b44
     - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
@@ -291,25 +291,13 @@ ScriptedImporter:
         y: 21
         width: 126
         height: 155
-      spriteId: 9f02316dd02960949a19ef02848dd193
+      spriteId: 07b4ce0d54b798b409a25132975afb14
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
   tileSets: []
-  platformSettings:
-  - name: Default
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 

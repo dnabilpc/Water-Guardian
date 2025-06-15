@@ -139,7 +139,7 @@ ScriptedImporter:
       y: 104
       width: 60
       height: 88
-    spriteID: ab117ce7c84b6b741a8c8b692e10b270
+    spriteID: 282d509610382004189e563ca07ef86c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,7 +160,7 @@ ScriptedImporter:
       y: 4
       width: 65
       height: 88
-    spriteID: f3d1beeecc40bd045a1582c9c8ee1560
+    spriteID: 6c4cd39ff6c8201459f98ed4a55e519a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -181,7 +181,7 @@ ScriptedImporter:
       y: 4
       width: 73
       height: 91
-    spriteID: b95aac7e1793b0945b1272d70b8a5094
+    spriteID: f57c728bb7b43de4aab9ec6cdba161fc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -202,7 +202,7 @@ ScriptedImporter:
       y: 4
       width: 75
       height: 92
-    spriteID: cff8eba09c3177347b812f2ec810fc86
+    spriteID: 607537056e1805e41baa5f65a44f4415
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -223,7 +223,7 @@ ScriptedImporter:
       y: 104
       width: 56
       height: 98
-    spriteID: fd4e738df666ac04abf88cd77c0591a5
+    spriteID: 30d5c7acb49d97643a2945552ea431d5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -244,7 +244,7 @@ ScriptedImporter:
       y: 104
       width: 48
       height: 95
-    spriteID: 9c2525bec9284ed449c34ecf2be4f448
+    spriteID: 3b1ba274eac493f409fa639596c959e7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -265,7 +265,7 @@ ScriptedImporter:
       y: 104
       width: 49
       height: 91
-    spriteID: 24fc11d3fa2edb649b0e3b4a35af9331
+    spriteID: 9c3ad1e4ea10b4b4b8189386d655fd4d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -283,7 +283,7 @@ ScriptedImporter:
       value1: 0
       value2: 0
       value3: 0
-    guid: -837447586
+    guid: 0
     name: Fire
     layerFlags: 0
     layerType: 0
@@ -297,7 +297,7 @@ ScriptedImporter:
         y: 23
         width: 60
         height: 88
-      spriteId: ab117ce7c84b6b741a8c8b692e10b270
+      spriteId: 282d509610382004189e563ca07ef86c
     - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -306,7 +306,7 @@ ScriptedImporter:
         y: 24
         width: 65
         height: 88
-      spriteId: f3d1beeecc40bd045a1582c9c8ee1560
+      spriteId: 6c4cd39ff6c8201459f98ed4a55e519a
     - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -315,7 +315,7 @@ ScriptedImporter:
         y: 23
         width: 73
         height: 91
-      spriteId: b95aac7e1793b0945b1272d70b8a5094
+      spriteId: f57c728bb7b43de4aab9ec6cdba161fc
     - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -324,7 +324,7 @@ ScriptedImporter:
         y: 23
         width: 75
         height: 92
-      spriteId: cff8eba09c3177347b812f2ec810fc86
+      spriteId: 607537056e1805e41baa5f65a44f4415
     - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
@@ -333,7 +333,7 @@ ScriptedImporter:
         y: 17
         width: 56
         height: 98
-      spriteId: fd4e738df666ac04abf88cd77c0591a5
+      spriteId: 30d5c7acb49d97643a2945552ea431d5
     - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
@@ -342,7 +342,7 @@ ScriptedImporter:
         y: 14
         width: 48
         height: 95
-      spriteId: 9c2525bec9284ed449c34ecf2be4f448
+      spriteId: 3b1ba274eac493f409fa639596c959e7
     - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
@@ -351,25 +351,13 @@ ScriptedImporter:
         y: 17
         width: 49
         height: 91
-      spriteId: 24fc11d3fa2edb649b0e3b4a35af9331
+      spriteId: 9c3ad1e4ea10b4b4b8189386d655fd4d
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
   tileSets: []
-  platformSettings:
-  - name: Default
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
