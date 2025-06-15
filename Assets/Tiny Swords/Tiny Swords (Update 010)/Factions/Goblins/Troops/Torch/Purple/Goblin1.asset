@@ -12,9 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
   m_Name: Goblin1
   m_EditorClassIdentifier: 
-  m_AnimatedSprites: []
-  m_MinSpeed: 1
-  m_MaxSpeed: 1
+  m_AnimatedSprites:
+  - {fileID: 8777388641641696378, guid: 04d2ff4cfdbc4874dbd65b2951ebf739, type: 3}
+  - {fileID: 6563495107105060230, guid: 04d2ff4cfdbc4874dbd65b2951ebf739, type: 3}
+  - {fileID: -3563705805885922832, guid: 04d2ff4cfdbc4874dbd65b2951ebf739, type: 3}
+  - {fileID: 6806364753432413300, guid: 04d2ff4cfdbc4874dbd65b2951ebf739, type: 3}
+  - {fileID: 6587575489424863480, guid: 04d2ff4cfdbc4874dbd65b2951ebf739, type: 3}
+  - {fileID: -5350870462702088880, guid: 04d2ff4cfdbc4874dbd65b2951ebf739, type: 3}
+  - {fileID: 6366584411652875701, guid: 04d2ff4cfdbc4874dbd65b2951ebf739, type: 3}
+  m_MinSpeed: 5
+  m_MaxSpeed: 5
   m_AnimationStartTime: 0
   m_AnimationStartFrame: 0
   m_TileColliderType: 0
