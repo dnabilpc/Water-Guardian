@@ -29,10 +29,43 @@ public class Bullet : MonoBehaviour
         rb.rotation = angle;
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
-    { 
-        Debug.Log("Bullet Hit");
-        other.gameObject.GetComponent<Health>().TakeDamage(bulletDamage);
+   private void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log("Bullet Hit: " + other.gameObject.name);
+        
+        // Cek apakah AudioManager instance ada
+        if (AudioManager.Instance != null)
+        {
+            Debug.Log("AudioManager found, playing hit sound");
+            PlayHitSound();
+        }
+        else
+        {
+            Debug.LogError("AudioManager Instance is null!");
+        }
+        
+        // Damage logic
+        Health health = other.gameObject.GetComponent<Health>();
+        if (health != null)
+        {
+            health.TakeDamage(bulletDamage);
+        }
+        
         Destroy(gameObject);
     }
+
+    private void PlayHitSound()
+    {
+        if (AudioManager.Instance != null && AudioManager.Instance.hitSound != null)
+        {
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.hitSound);
+            Debug.Log("Hit sound played");
+        }
+        else
+        {
+            Debug.LogWarning("Cannot play hit sound - AudioManager or hitSound is null");
+        }
+    }
+
+
 }
