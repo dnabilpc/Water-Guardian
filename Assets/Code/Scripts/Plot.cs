@@ -11,6 +11,7 @@ public class Plot : MonoBehaviour
 
     private void Start()
     {
+        
         startColor = sr.color;
     }
 
