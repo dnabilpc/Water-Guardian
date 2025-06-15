@@ -288,10 +288,10 @@ TextureImporter:
       name: TX Props with Shadow_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 447
-        width: 41
-        height: 48
+        x: 0
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,10 +310,10 @@ TextureImporter:
       name: TX Props with Shadow_1
       rect:
         serializedVersion: 2
-        x: 95
-        y: 450
-        width: 39
-        height: 33
+        x: 64
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,10 +332,10 @@ TextureImporter:
       name: TX Props with Shadow_2
       rect:
         serializedVersion: 2
-        x: 159
-        y: 447
-        width: 41
-        height: 48
+        x: 128
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,10 +354,10 @@ TextureImporter:
       name: TX Props with Shadow_3
       rect:
         serializedVersion: 2
-        x: 226
-        y: 450
-        width: 34
-        height: 54
+        x: 192
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,10 +376,10 @@ TextureImporter:
       name: TX Props with Shadow_4
       rect:
         serializedVersion: 2
-        x: 269
-        y: 477
-        width: 7
-        height: 7
+        x: 256
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -398,10 +398,10 @@ TextureImporter:
       name: TX Props with Shadow_5
       rect:
         serializedVersion: 2
-        x: 269
-        y: 456
-        width: 7
-        height: 21
+        x: 320
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,10 +420,10 @@ TextureImporter:
       name: TX Props with Shadow_6
       rect:
         serializedVersion: 2
-        x: 291
-        y: 451
-        width: 65
-        height: 43
+        x: 384
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -442,10 +442,10 @@ TextureImporter:
       name: TX Props with Shadow_7
       rect:
         serializedVersion: 2
-        x: 386
+        x: 448
         y: 448
-        width: 34
-        height: 63
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -464,10 +464,10 @@ TextureImporter:
       name: TX Props with Shadow_8
       rect:
         serializedVersion: 2
-        x: 444
-        y: 418
-        width: 48
-        height: 75
+        x: 0
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -486,10 +486,10 @@ TextureImporter:
       name: TX Props with Shadow_9
       rect:
         serializedVersion: 2
-        x: 26
-        y: 358
-        width: 51
-        height: 52
+        x: 64
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -508,10 +508,10 @@ TextureImporter:
       name: TX Props with Shadow_10
       rect:
         serializedVersion: 2
-        x: 95
-        y: 386
-        width: 41
-        height: 51
+        x: 128
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -530,10 +530,10 @@ TextureImporter:
       name: TX Props with Shadow_11
       rect:
         serializedVersion: 2
-        x: 162
-        y: 386
-        width: 33
-        height: 41
+        x: 192
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -552,10 +552,10 @@ TextureImporter:
       name: TX Props with Shadow_12
       rect:
         serializedVersion: 2
-        x: 226
-        y: 354
-        width: 39
-        height: 68
+        x: 256
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -574,10 +574,10 @@ TextureImporter:
       name: TX Props with Shadow_13
       rect:
         serializedVersion: 2
-        x: 269
-        y: 395
-        width: 7
-        height: 7
+        x: 320
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,10 +596,10 @@ TextureImporter:
       name: TX Props with Shadow_14
       rect:
         serializedVersion: 2
-        x: 269
-        y: 388
-        width: 7
-        height: 7
+        x: 384
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -618,10 +618,10 @@ TextureImporter:
       name: TX Props with Shadow_15
       rect:
         serializedVersion: 2
-        x: 287
-        y: 388
-        width: 69
-        height: 38
+        x: 448
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -640,10 +640,10 @@ TextureImporter:
       name: TX Props with Shadow_16
       rect:
         serializedVersion: 2
-        x: 386
-        y: 352
-        width: 33
-        height: 63
+        x: 0
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -662,10 +662,10 @@ TextureImporter:
       name: TX Props with Shadow_17
       rect:
         serializedVersion: 2
-        x: 452
-        y: 355
-        width: 34
-        height: 40
+        x: 64
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -684,10 +684,10 @@ TextureImporter:
       name: TX Props with Shadow_18
       rect:
         serializedVersion: 2
-        x: 269
-        y: 381
-        width: 7
-        height: 7
+        x: 128
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -706,10 +706,10 @@ TextureImporter:
       name: TX Props with Shadow_19
       rect:
         serializedVersion: 2
-        x: 269
-        y: 374
-        width: 7
-        height: 7
+        x: 192
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -728,10 +728,10 @@ TextureImporter:
       name: TX Props with Shadow_20
       rect:
         serializedVersion: 2
-        x: 269
-        y: 367
-        width: 7
-        height: 7
+        x: 256
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -750,10 +750,10 @@ TextureImporter:
       name: TX Props with Shadow_21
       rect:
         serializedVersion: 2
-        x: 269
-        y: 360
-        width: 7
-        height: 7
+        x: 320
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -772,10 +772,10 @@ TextureImporter:
       name: TX Props with Shadow_22
       rect:
         serializedVersion: 2
-        x: 28
-        y: 292
-        width: 19
-        height: 55
+        x: 384
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -794,10 +794,10 @@ TextureImporter:
       name: TX Props with Shadow_23
       rect:
         serializedVersion: 2
-        x: 56
-        y: 292
-        width: 19
-        height: 55
+        x: 448
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -816,19 +816,19 @@ TextureImporter:
       name: TX Props with Shadow_24
       rect:
         serializedVersion: 2
-        x: 98
-        y: 319
-        width: 31
-        height: 34
+        x: 0
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9602641ccc72282d0800000000000000
+      spriteID: 7a9171e2541829d40acead8e9561b53d
       internalID: -3278013818402889623
       vertices: []
       indices: 
@@ -838,19 +838,19 @@ TextureImporter:
       name: TX Props with Shadow_25
       rect:
         serializedVersion: 2
-        x: 161
-        y: 322
-        width: 33
-        height: 38
+        x: 64
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 49aa66c53fdd9ae10800000000000000
+      spriteID: b1859433893cc0b43855591bd8281a87
       internalID: 2209541129498962580
       vertices: []
       indices: 
@@ -860,19 +860,19 @@ TextureImporter:
       name: TX Props with Shadow_26
       rect:
         serializedVersion: 2
-        x: 226
-        y: 290
-        width: 50
-        height: 40
+        x: 128
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c7ec6bd7c001fdc70800000000000000
+      spriteID: 101d377c2a0ef634587268b2516330df
       internalID: 8997928226344324732
       vertices: []
       indices: 
@@ -882,19 +882,19 @@ TextureImporter:
       name: TX Props with Shadow_27
       rect:
         serializedVersion: 2
-        x: 287
-        y: 296
-        width: 37
-        height: 59
+        x: 192
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b88aac95df11794c0800000000000000
+      spriteID: 0137959dd02fdd94797b14c3aa043bb7
       internalID: -4280933140961515381
       vertices: []
       indices: 
@@ -904,19 +904,19 @@ TextureImporter:
       name: TX Props with Shadow_28
       rect:
         serializedVersion: 2
-        x: 351
-        y: 260
-        width: 46
-        height: 79
+        x: 256
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a5014ee6e66ab1580800000000000000
+      spriteID: ff4b39251a77ad441bd15d14aa252cc4
       internalID: -8855301249056894886
       vertices: []
       indices: 
@@ -926,19 +926,19 @@ TextureImporter:
       name: TX Props with Shadow_29
       rect:
         serializedVersion: 2
-        x: 95
-        y: 255
-        width: 32
-        height: 34
+        x: 320
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 823ff0131f7ee0910800000000000000
+      spriteID: aff3c14d52bf182468ad2119d940ab17
       internalID: 1805635523718411048
       vertices: []
       indices: 
@@ -948,19 +948,19 @@ TextureImporter:
       name: TX Props with Shadow_30
       rect:
         serializedVersion: 2
-        x: 164
-        y: 260
-        width: 25
-        height: 36
+        x: 384
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f7d662b90cd6c3a40800000000000000
+      spriteID: a0f974e09f453744b8e13f2ac6a4ab8a
       internalID: 5349271131413441919
       vertices: []
       indices: 
@@ -970,19 +970,19 @@ TextureImporter:
       name: TX Props with Shadow_31
       rect:
         serializedVersion: 2
-        x: 224
-        y: 231
-        width: 37
-        height: 43
+        x: 448
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3587a31b2c9d04c80800000000000000
+      spriteID: 38196aec46e63af45a4a4f12dd81eea3
       internalID: -8340427079669876653
       vertices: []
       indices: 
@@ -992,19 +992,19 @@ TextureImporter:
       name: TX Props with Shadow_32
       rect:
         serializedVersion: 2
-        x: 288
-        y: 231
-        width: 34
-        height: 31
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9e0ee66bc509cd4d0800000000000000
+      spriteID: 6b49f8de7c68fd84687bd7436467e917
       internalID: -3108450914920374039
       vertices: []
       indices: 
@@ -1014,19 +1014,19 @@ TextureImporter:
       name: TX Props with Shadow_33
       rect:
         serializedVersion: 2
-        x: 415
-        y: 260
-        width: 37
-        height: 59
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3c3ba4d32dd5acab0800000000000000
+      spriteID: 8b85c19edd9bdf44b804afdb3e2e9551
       internalID: -4987070479806581821
       vertices: []
       indices: 
@@ -1036,19 +1036,19 @@ TextureImporter:
       name: TX Props with Shadow_34
       rect:
         serializedVersion: 2
-        x: 329
-        y: 240
-        width: 7
-        height: 7
+        x: 256
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e258196cb232209e0800000000000000
+      spriteID: b0114a1b88fb6dd47b1abb46132933f1
       internalID: -1656723041996929746
       vertices: []
       indices: 
@@ -1058,19 +1058,19 @@ TextureImporter:
       name: TX Props with Shadow_35
       rect:
         serializedVersion: 2
-        x: 329
-        y: 233
-        width: 7
-        height: 7
+        x: 320
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 057005c04ae9b10b0800000000000000
+      spriteID: d73b96a5c5e2c6a4b92e6473977e2a57
       internalID: -5756833271244650672
       vertices: []
       indices: 
@@ -1080,19 +1080,19 @@ TextureImporter:
       name: TX Props with Shadow_36
       rect:
         serializedVersion: 2
-        x: 336
-        y: 233
-        width: 7
-        height: 14
+        x: 384
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a03842ca4cac0b2c0800000000000000
+      spriteID: 2decb2a5e3d9c2b448a369349acc6fdb
       internalID: -4417808288399981814
       vertices: []
       indices: 
@@ -1102,19 +1102,19 @@ TextureImporter:
       name: TX Props with Shadow_37
       rect:
         serializedVersion: 2
-        x: 352
-        y: 162
-        width: 99
-        height: 82
+        x: 448
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 61698242fba5dfb30800000000000000
+      spriteID: ba87ea81e777b9c4498370f75407101d
       internalID: 4322710994337437206
       vertices: []
       indices: 
@@ -1124,19 +1124,19 @@ TextureImporter:
       name: TX Props with Shadow_38
       rect:
         serializedVersion: 2
-        x: 163
-        y: 196
-        width: 30
-        height: 29
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 897c1c3cebcc85cf0800000000000000
+      spriteID: a011ae7e894c9534ca410deeca2b400b
       internalID: -263235458501064808
       vertices: []
       indices: 
@@ -1146,19 +1146,19 @@ TextureImporter:
       name: TX Props with Shadow_39
       rect:
         serializedVersion: 2
-        x: 226
-        y: 168
-        width: 36
-        height: 42
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 165995f8d880c08e0800000000000000
+      spriteID: 3e70e220119e49840acfa1ddccf9a42e
       internalID: -1725995153101318815
       vertices: []
       indices: 
@@ -1168,19 +1168,19 @@ TextureImporter:
       name: TX Props with Shadow_40
       rect:
         serializedVersion: 2
-        x: 287
-        y: 157
-        width: 48
-        height: 50
+        x: 256
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 66fc37fc4d13c2860800000000000000
+      spriteID: e2bae8afeb0088644b1f43e152592aee
       internalID: 7506429469003075430
       vertices: []
       indices: 
@@ -1190,19 +1190,19 @@ TextureImporter:
       name: TX Props with Shadow_41
       rect:
         serializedVersion: 2
-        x: 164
-        y: 131
-        width: 25
-        height: 34
+        x: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4d894dc478b47e7b0800000000000000
+      spriteID: 3b57cce6a21e7444b93d92bc5f3604d5
       internalID: -5195100600666908460
       vertices: []
       indices: 
@@ -1212,19 +1212,19 @@ TextureImporter:
       name: TX Props with Shadow_42
       rect:
         serializedVersion: 2
-        x: 315
-        y: 152
-        width: 15
-        height: 6
+        x: 384
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1cd03a6ebda628f60800000000000000
+      spriteID: 8d1e4932fbf39e34cac351b52b5da18c
       internalID: 8035102177882213825
       vertices: []
       indices: 
@@ -1234,19 +1234,19 @@ TextureImporter:
       name: TX Props with Shadow_43
       rect:
         serializedVersion: 2
-        x: 419
-        y: 103
-        width: 60
-        height: 51
+        x: 448
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7cad5739a54a67a70800000000000000
+      spriteID: 7bfdb0969e145054c85c1ff8855bd83d
       internalID: 8824421228807051975
       vertices: []
       indices: 
@@ -1256,19 +1256,19 @@ TextureImporter:
       name: TX Props with Shadow_44
       rect:
         serializedVersion: 2
-        x: 2
-        y: 37
-        width: 62
-        height: 46
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7be0e786041c30ae0800000000000000
+      spriteID: 387c2d4eb9e07224e831be5726d873c3
       internalID: -1584210161529123145
       vertices: []
       indices: 
@@ -1278,19 +1278,19 @@ TextureImporter:
       name: TX Props with Shadow_45
       rect:
         serializedVersion: 2
-        x: 9
-        y: 9
-        width: 14
-        height: 12
+        x: 384
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 15255bfaa9941f780800000000000000
+      spriteID: 75378e7564cf9284b8fbccce2edc483d
       internalID: -8651052480480325039
       vertices: []
       indices: 
@@ -1300,19 +1300,19 @@ TextureImporter:
       name: TX Props with Shadow_46
       rect:
         serializedVersion: 2
-        x: 39
-        y: 7
-        width: 19
-        height: 16
+        x: 448
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: eddf69ec04c8562f0800000000000000
+      spriteID: 28b36e81f91c3c54eb67be1450587437
       internalID: -980223133911417378
       vertices: []
       indices: 
@@ -1322,19 +1322,19 @@ TextureImporter:
       name: TX Props with Shadow_47
       rect:
         serializedVersion: 2
-        x: 67
-        y: 5
-        width: 27
-        height: 21
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a0f38fc5fa8644e80800000000000000
+      spriteID: 97be6f24acc79794783a9f4eddd0dd85
       internalID: -8195310319519121654
       vertices: []
       indices: 
@@ -1344,19 +1344,19 @@ TextureImporter:
       name: TX Props with Shadow_48
       rect:
         serializedVersion: 2
-        x: 99
-        y: 5
-        width: 27
-        height: 21
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d75562193ca42a620800000000000000
+      spriteID: d38abe7bed5f2e34a9d84360908aaccc
       internalID: 2783869723482674557
       vertices: []
       indices: 
@@ -1366,19 +1366,19 @@ TextureImporter:
       name: TX Props with Shadow_49
       rect:
         serializedVersion: 2
-        x: 129
-        y: 5
-        width: 31
-        height: 24
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 987ca7404e9d15190800000000000000
+      spriteID: e1a4a4b9db61378409f7fb665e0047d5
       internalID: -7975353891745511543
       vertices: []
       indices: 
@@ -1388,19 +1388,19 @@ TextureImporter:
       name: TX Props with Shadow_50
       rect:
         serializedVersion: 2
-        x: 161
-        y: 2
-        width: 31
-        height: 29
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6f7855f13a8b53100800000000000000
+      spriteID: 7e1164ddb506e454baa9f37eb962327d
       internalID: 87178778548471798
       vertices: []
       indices: 
@@ -1410,64 +1410,20 @@ TextureImporter:
       name: TX Props with Shadow_51
       rect:
         serializedVersion: 2
-        x: 230
-        y: 6
-        width: 20
-        height: 18
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d8eeed71da43a2910800000000000000
+      spriteID: 1be8365e49f053f47a9656d0239e3bb3
       internalID: 1813319718004518541
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props with Shadow_52
-      rect:
-        serializedVersion: 2
-        x: 262
-        y: 7
-        width: 21
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f6245460d5601b80800000000000000
-      internalID: -8426122957099358477
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props with Shadow_53
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 6
-        width: 33
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 28e845bc03373f340800000000000000
-      internalID: 4896383873288801922
       vertices: []
       indices: 
       edges: []
@@ -1476,7 +1432,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 92b2c85de64c578459abe41c9936c20d
     internalID: 0
     vertices: []
     indices: 
@@ -1484,7 +1440,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       TX Props with Shadow_0: 100266798488712620
       TX Props with Shadow_1: -3810305374418314676
@@ -1534,8 +1492,6 @@ TextureImporter:
       TX Props with Shadow_5: 5115589697091280422
       TX Props with Shadow_50: 87178778548471798
       TX Props with Shadow_51: 1813319718004518541
-      TX Props with Shadow_52: -8426122957099358477
-      TX Props with Shadow_53: 4896383873288801922
       TX Props with Shadow_6: -4431297965882496499
       TX Props with Shadow_7: 5993883482969546705
       TX Props with Shadow_8: 8794332673144172688
