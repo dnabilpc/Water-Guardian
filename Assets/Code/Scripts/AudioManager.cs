@@ -18,6 +18,10 @@ public class AudioManager : MonoBehaviour
     public AudioClip bgmCutscene;
     public AudioClip voiceOver;
     public AudioClip hitSound;
+    public AudioClip gameWonSound; // Audio untuk game won
+    public AudioClip gameOverSound; // Audio untuk game over
+
+
 
     private bool isLoading = false;
 
@@ -107,6 +111,32 @@ public class AudioManager : MonoBehaviour
             Save();
         }
     }
+
+    public void PlayGameWonAudio()
+    {
+        if (gameWonSound != null)
+        {
+            PlaySFX(gameWonSound);
+        }
+        else
+        {
+            Debug.LogWarning("Game won sound clip is not assigned!");
+        }
+    }
+
+    public void PlayGameOverAudio()
+    {
+        if (gameOverSound != null)
+        {
+            PlaySFX(gameOverSound);
+        }
+        else
+        {
+            Debug.LogWarning("Game over sound clip is not assigned!");
+        }
+    }
+
+
 
     private void Load()
     {
