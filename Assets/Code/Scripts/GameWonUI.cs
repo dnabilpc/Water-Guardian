@@ -11,6 +11,11 @@ public class GameWonUI : MonoBehaviour
     public Button mainMenuButton;
     public TextMeshProUGUI finalCurrencyText;
 
+    [Header("Custom Next Level Settings")]
+    public string nextLevelSceneName = "Level2"; // Custom scene name
+    public bool useSceneIndex = false;
+    public int nextLevelSceneIndex = 2;
+
     private void Start()
     {
         gameWonPanel.SetActive(false);
@@ -37,10 +42,16 @@ public class GameWonUI : MonoBehaviour
     private void NextLevel()
     {
         Time.timeScale = 1f;
-        // Load next level scene - sesuaikan dengan nama scene level berikutnya
-        SceneManager.LoadScene("Level2"); // Atau gunakan build index
-    }
 
+        if (useSceneIndex)
+        {
+            SceneManager.LoadScene(nextLevelSceneIndex);
+        }
+        else
+        {
+            SceneManager.LoadScene(nextLevelSceneName);
+        }
+    }
     private void GoToMainMenu()
     {
         Time.timeScale = 1f;
